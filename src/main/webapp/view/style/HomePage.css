@@ -1,0 +1,290 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("/public/img/toMain1.png");
+}
+
+a {
+    color: teal;
+    text-decoration: none;
+}
+
+a:hover {
+    color: transparent;
+}
+
+#container {
+    width: 936px;
+    margin: 0 auto;
+}
+
+#top_part_container {
+    position: relative;
+    margin-top: 10px;
+    border: 3px inset yellow;
+    border-radius: 20px 15px;
+    background-image: url("/public/img/tloUp.jpg");
+    width: 1000px;
+    height: 150px;
+}
+
+#upper_menu {
+    position: absolute;
+    top: 28px;
+    display: inline-table;
+}
+
+#main_um li {
+    list-style-type: none;
+    float: left;
+}
+
+#main_um li a {
+    background-color: transparent;
+    height: 40px;
+    display: inline-block;
+    float: left;
+    border-bottom: none;
+    padding: 0px 50px;
+}
+
+/* middle Menu*/
+
+#middle_menu li {
+    list-style-type: none;
+    float: left;
+}
+
+#middle_menu li a {
+    border-bottom: none;
+    font-size: 20px;
+}
+
+#middle_menu #first_floor {
+    margin-left: 100px;
+}
+
+.first_floor img:hover {
+    opacity: 0.8;
+}
+
+#middle_menu span.odst {
+    display: inline-block;
+    margin: 0px 30px;
+    font: 22px bold;
+}
+
+#middle_menu li a:hover {
+    color: #06376C;
+}
+
+/* Second floor*/
+
+.second_floor {
+    margin-top: 5px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.8);
+    padding: 5px 5px;
+    z-index: 1;
+}
+
+
+#main_um li:hover .second_floor {
+    display: block;
+    width: 110px;
+    height: 330px;
+    border-radius: 15px 50px;
+}
+
+.second_floor li {
+    margin-left: -30px;
+    margin-bottom: 25px;
+
+}
+
+#live {
+    margin-top: 5px;
+    background-color: #f9f9f9;
+    border-radius: 15px 15px;
+    color: #b3a30f;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.8);
+    padding: 5px 5px;
+    z-index: 1;
+}
+
+.liveWindow {
+    margin-top: 10px;
+    background-color: transparent;
+    color: #d8b600;
+    border-radius: 15px 29px;
+    box-shadow: 0px 8px 12px 0px rgb(14, 14, 14);
+    padding: 5px 5px;
+    z-index: 1;
+}
+
+.second_floor li a {
+    display: block;
+    width: 150px;
+    margin-bottom: 2px;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.second_floor li a:hover {
+
+    margin-left: -10px;
+    padding-left: 10px;
+
+}
+
+/*Main*/
+
+#content {
+    width: 1044px;
+
+}
+
+
+
+/* Middle */
+
+#middle_part_container {
+    margin-top: 30px;
+    border: 3px inset yellow;
+    border-radius: 20px 15px;
+    background-image: url("/public/img/tloUp.jpg");
+    width: 1000px;
+    height: 1150px;
+
+}
+
+#text {
+    color: rgb(70, 180, 152);
+    text-align: justify;
+    padding-top: 40px;
+    padding-right: 70px;
+    font-family: "trebuchet MS", helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 22px;
+    text-align: center;
+    color: purple;
+    margin-bottom: 20px;
+    font-family: calibri, tahoma, arial;
+    font-style: italic;
+}
+
+p a {
+
+    font-weight: bold;
+    border: none;
+}
+
+#ending_link a:hover {
+    color: white;
+}
+
+#side_text {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    text-align: left;
+    float: left;
+    width: 300px;
+    height: 900px;
+    color: #24435c;
+    border: 3px inset yellow;
+    border-radius: 15px 15px;
+    padding: 15px;
+    background-image: url('/public/img/tloUp.jpg');
+    position: fixed;
+    display: inline-block;
+    clear: right;
+    margin: 10px 45px 10px 85px;
+    box-shadow: 0px 8px 12px 0px rgb(14, 14, 14);
+}
+
+#side_text a:hover {
+    color: #d8b600;
+}
+
+/*DOWN*/
+
+#down_part_container {
+    width: 1044px;
+    height: 50px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    position: absolute;
+}
+
+#last_pic {
+    float: left;
+    position: relative;
+}
+
+#mail {
+    position: absolute;
+    border-bottom: 2px solid white;
+    margin-left: 25px;
+    margin-top: 15px;
+    padding: 2px;
+    color: white;
+}
+
+div.polaroid {
+    max-width: 415px;
+    max-height: 415px;
+    padding: 10px 10px 20px 10px;
+    border: 1px inset #d5ff28;
+    background-color: white;
+    box-shadow: 10px 10px 5px #676767;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+#main_news {
+    max-width: 615px;
+    margin-left:auto;
+    margin-right:auto;
+    transform: rotate(2deg);
+    border-bottom: 50px;
+
+}
+
+#middleNewsMain {
+    max-width: 595px;
+
+}
+
+.middleNews {
+    max-width: 395px;
+    max-height: 385px;
+}
+
+#img1 {
+    float: right;
+    transform: rotate(5deg);
+}
+
+#img2 {
+    float: right;
+    transform: rotate(-2deg);
+}
+
+#img3 {
+    float: right;
+    transform: rotate(-9deg);
+}
+
+#img4 {
+    float: right;
+    transform: rotate(4deg);
+}

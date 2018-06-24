@@ -1,0 +1,386 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("/public/img/toMain1.png");
+
+}
+
+a {
+    color: teal;
+    text-decoration: none;
+}
+
+a:hover {
+    color: transparent;
+}
+
+#container {
+    width: 1044px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#top_part_container {
+    position: relative;
+    margin-top: 10px;
+    border: 3px inset yellow;
+    border-radius: 20px 15px;
+    background-image: url("/public/img/tloUp.jpg");
+    width: 1000px;
+    height: 150px;
+}
+
+#upper_menu {
+    position: absolute;
+    top: 28px;
+    display: inline-table;
+}
+
+#main_um li {
+    list-style-type: none;
+    float: left;
+}
+
+#main_um li a {
+    background-color: transparent;
+    height: 40px;
+    display: inline-block;
+    float: left;
+    border-bottom: none;
+    padding: 0px 50px;
+}
+
+/* Środkowe Menu*/
+
+#middle_menu li {
+    list-style-type: none;
+    float: left;
+}
+
+#middle_menu li a {
+    border-bottom: none;
+    font-size: 20px;
+}
+
+#middle_menu #first_floor {
+    margin-left: 100px;
+}
+
+#first_floor li {
+    margin-top: 10px;
+}
+
+#middle_menu span.odst {
+    display: inline-block;
+    margin: 0px 30px;
+    font: 22px bold;
+}
+
+#middle_menu li a:hover {
+    color: #06376C;
+}
+
+/* Wysówane Srokowe menu*/
+
+.second_floor {
+    margin-top: 5px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.8);
+    padding: 5px 5px;
+    z-index: 1;
+}
+
+#main_um li:hover .second_floor {
+    display: block;
+    width: 110px;
+    height: 330px;
+    border-radius: 15px 50px;
+}
+
+.second_floor li {
+    margin-left: -30px;
+    margin-bottom: 25px;
+
+}
+
+.live {
+    margin-top: 5px;
+    background-color: #f9f9f9;
+    border-radius: 15px 15px;
+    color: #b3a30f;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.8);
+    padding: 5px 5px;
+    z-index: 1;
+}
+
+.liveWindow {
+    margin-top: 10px;
+    background-color: transparent;
+    color: #d8b600;
+    border-radius: 15px 29px;
+    box-shadow: 0px 8px 12px 0px rgb(14, 14, 14);
+    padding: 5px 5px;
+    z-index: 1;
+}
+
+.second_floor li a {
+    display: block;
+    width: 150px;
+    margin-bottom: 2px;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.second_floor li a:hover {
+
+    margin-left: -10px;
+    padding-left: 10px;
+
+}
+
+/*ZWARTOŚĆ GŁÓWNA*/
+
+#content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    /*
+    Nope =(
+    margin-left: -25%;
+    margin-top: -25%;
+    */
+
+    /*
+    Yep!
+    */
+    transform: translate(-50%, -50%);
+
+    /*
+    Not even necessary really.
+    e.g. Height could be left out!
+    */
+    width: 50%;
+    height: 50%;
+
+}
+
+/* ŚRODEK */
+
+#middle_part_container {
+    margin-top: 80px;
+    border: 3px inset yellow;
+    border-radius: 20px 15px;
+    background-image: url("/public/img/tloUp.jpg");
+    width: 550px;
+    height: 600px;
+
+}
+
+#text {
+    color: rgb(70, 180, 152);
+    margin: 30px 20px;
+    line-height: 140%;
+    font-size: 16px;
+    font-family: "trebuchet MS", helvetica, sans-serif;
+}
+
+#article {
+    font-size: 25px;
+    font-family: "Britannic Bold";
+    background-color: #f9f9f9;
+    border-radius: 15px 15px;
+    color: #b3a30f;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.8);
+    padding: 20px 20px;
+    z-index: 1;
+    line-height: 30px
+}
+
+h1 {
+    font-size: 22px;
+    text-align: center;
+    color: purple;
+    margin-bottom: 20px;
+    font-family: calibri, tahoma, arial;
+    font-style: italic;
+}
+
+p a {
+
+    font-weight: bold;
+    border: none;
+}
+
+#ending_link a:hover {
+    color: white;
+}
+
+#side_text {
+    text-align: left;
+    float: left;
+    width: 300px;
+    height: 900px;
+    color: #24435c;
+    border: 3px inset yellow;
+    border-radius: 15px 15px;
+    padding: 15px;
+    background-image: url('/public/img/tloUp.jpg');
+    position: fixed;
+    display: inline-block;
+    clear: right;
+    margin: 10px 45px 10px 85px;
+    box-shadow: 0px 8px 12px 0px rgb(14, 14, 14);
+}
+
+#side_text a:hover {
+    color: #d8b600;
+}
+
+div.polaroid {
+    max-width: 515px;
+    max-height: 515px;
+    padding: 10px 10px 35px 10px;
+    border: 1px inset #d5ff28;
+    background-color: white;
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-left: 250px;
+    box-shadow: 10px 10px 5px #676767;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.middleNews {
+    max-width: 495px;
+    max-height: 485px;
+}
+
+.img4 {
+
+    transform: rotate(4deg);
+}
+
+/*DÓŁ*/
+
+#down_part_container {
+    width: 1044px;
+    height: 50px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    position: absolute;
+}
+
+#last_pic {
+
+    float: left;
+    position: relative;
+}
+
+#mail {
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 15px;
+    padding: 2px;
+}
+#error_1{
+
+    width: 100%;
+    font-size: 22px;
+    margin-top: 11px;
+    text-align: center;
+    font-weight: bold;
+    color: #ff1a08;
+    padding: 5px 0px;
+    text-shadow:2px 2px 15px #141414;
+}
+/*////////////////////////////////////////////*/
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container1 {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+/*///////////////////////////////////////////////*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #d8b600;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    margin: 30px 0 8px 150px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+    border: 3px inset yellow;
+
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
